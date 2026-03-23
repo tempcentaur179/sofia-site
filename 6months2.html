@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Sofia ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #2b0000, #8b0000, #ff1e1e);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+nav a {
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffb3b3;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+}
+
+.hero p {
+    margin-top: 15px;
+    opacity: 0.8;
+}
+
+#contador {
+    margin-top: 10px;
+    font-size: 1.3em;
+    color: #ffcccc;
+}
+
+button {
+    margin-top: 25px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #8b0000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* SECTIONS */
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+/* GALERIA */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* ANIMAÇÃO */
+.fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* BOTÃO FINAL */
+.final-btn {
+    margin-top: 40px;
+    background: #ff4d6d;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#sobre">Nós</a>
+    <a href="#cinema">Nosso Dia</a>
+    <a href="#momentos">Momentos</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#final">Final</a>
+</nav>
+
+<div class="hero">
+    <h1>Sofia ❤️</h1>
+    <p>Meu grudinhu…</p>
+    <div id="contador"></div>
+    <button onclick="scrollToSection()">Começar</button>
+</div>
+
+<section id="sobre" class="fade">
+    <div class="container">
+        <h2>Nós</h2>
+        <p>
+        A gente se conheceu de um jeito tão simples…<br>
+        mas virou tudo.<br><br>
+
+        Você, com seu sorriso, seu cheiro, seu carinho…
+        seu jeitinho único que me prende de um jeito que eu nem sei explicar.<br><br>
+
+        Desde que você entrou na minha vida,
+        tudo ficou mais leve… mais bonito… mais feliz.<br><br>
+
+        E eu percebi uma coisa:<br><br>
+
+        <b>eu amo como você me ama.</b>
+        </p>
+    </div>
+</section>
+
+<section id="cinema" class="fade">
+    <div class="container">
+        <h2>Nosso Primeiro Cinema 🎬</h2>
+        <p>
+        Eu nunca vou esquecer aquele dia.<br><br>
+
+        Foi ali que tudo começou a ficar diferente.<br>
+        Cada olhar, cada momento…<br><br>
+
+        Foi simples, mas foi nosso.<br>
+        E foi perfeito exatamente por isso.<br><br>
+
+        Eu guardo esse dia comigo como um dos mais especiais da minha vida.
+        </p>
+
+        <div class="galeria">
+            <img src="cinema1.jpg">
+            <img src="cinema2.jpg">
+        </div>
+    </div>
+</section>
+
+<section id="momentos" class="fade">
+    <div class="container">
+        <h2>Coisas que só a gente tem</h2>
+        <p>
+        Nosso jeito é estranho… mas é nosso kkkkk<br><br>
+
+        Nossos hábitos, nossas brincadeiras,
+        até o fato da gente ter o dedão “bugado” e mexer ele KKKKK<br><br>
+
+        Tudo em você combina comigo de um jeito que não faz sentido…
+        mas ao mesmo tempo faz todo o sentido do mundo.<br><br>
+
+        "ti cochilledo" 💙
+        </p>
+    </div>
+</section>
+
+<section id="galeria" class="fade">
+    <div class="container">
+        <h2>Nossa Galeria 📸</h2>
+
+        <p style="margin-bottom:20px;">
+        Alguns dos nossos momentos que eu nunca quero esquecer…
+        </p>
+
+        <div class="galeria">
+            <img src="foto1.jpg">
+            <img src="foto2.jpg">
+            <img src="foto3.jpg">
+            <img src="foto4.jpg">
+            <img src="foto5.jpg">
+            <img src="foto6.jpg">
+        </div>
+    </div>
+</section>
+
+<section id="final" class="fade">
+    <div class="container">
+        <h2>Pra Sempre</h2>
+        <p>
+        Você é meu primeiro amor.<br>
+        E eu não quero que seja só o primeiro…<br>
+        eu quero que seja o único.<br><br>
+
+        Eu quero levar você pra minha vida inteira.<br>
+        Quero construir coisas com você,
+        viver momentos com você…<br>
+        envelhecer com você.<br><br>
+
+        Porque você é a princesa da minha vida.<br><br>
+
+        E se depender de mim…<br>
+        isso aqui não acaba nunca.<br><br>
+
+        <b>Eu te amo, meu grudinhu ❤️</b>
+        </p>
+
+        <button class="final-btn" onclick="alert('Você é tudo pra mim ❤️')">
+            Clique aqui 💌
+        </button>
+    </div>
+</section>
+
+<!-- MÚSICA CORRIGIDA -->
+<audio id="musica" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function scrollToSection() {
+    document.getElementById("sobre").scrollIntoView({behavior: "smooth"});
+}
+
+/* animação */
+const faders = document.querySelectorAll(".fade");
+
+window.addEventListener("scroll", () => {
+    faders.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+            el.classList.add("show");
+        }
+    });
+});
+
+/* contador */
+const inicio = new Date("2023-09-19");
+
+function atualizarContador() {
+    const agora = new Date();
+    const diff = agora - inicio;
+
+    const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+    document.getElementById("contador").innerText =
+        dias + " dias juntos ❤️";
+}
+
+setInterval(atualizarContador, 1000);
+
+/* TOCAR MÚSICA */
+document.addEventListener("click", function() {
+    document.getElementById("musica").play();
+}, { once: true });
+</script>
+
+</body>
+</html>
